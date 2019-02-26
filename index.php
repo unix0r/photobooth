@@ -41,6 +41,7 @@ require_once('db.php');
 			<div class="inner">
 				<div class="names"><hr class="small" /><hr><div data-l10n="startScreen"></div><hr><hr class="small" /></div>
 				<a href="#" class="btn takePic"><i class="fa fa-camera"></i> <span data-l10n="takePhoto"></span></a>
+                <a href="#" class="btn takeVideo"><i class="fa fa-camera"></i> <span data-l10n="takeVideo"></span></a>
 			</div>
 		</div>
 

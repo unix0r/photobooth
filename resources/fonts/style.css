@@ -216,6 +216,13 @@ h1 {
 	margin-top: 20px;
 }
 
+.takeVideo {
+	text-align: center;
+	display: block;
+	width: 250px;
+	margin-top: 20px;
+}
+
 .linebetween {
 	width: 100%;
 	border: 0 none;
