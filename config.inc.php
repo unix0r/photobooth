@@ -3,9 +3,9 @@
 $config = array();
 $config['os'] = (DIRECTORY_SEPARATOR == '\\') || (strtolower(substr(PHP_OS, 0, 3)) === 'win') ? 'windows' : 'linux';
 $config['dev'] = true;
-$config['use_print'] = true;
-$config['use_qr'] = true;
-$config['show_fork'] = true;
+$config['use_print'] = false;
+$config['use_qr'] = false;
+$config['show_fork'] = false;
 #$config['file_format'] = 'date'; // comment in to get dateformat images
 
 // FOLDERS
@@ -33,7 +33,7 @@ switch($config['os']) {
 	break;
 	case 'linux':
 	default:
-	$config['take_picture']['cmd'] = 'sudo gphoto2 --capture-image-and-download --filename=%s images';
+	$config['take_picture']['cmd'] = 'sudo gphoto2 --capture-image-and-download --keep --filename=%s images';
 	$config['take_picture']['msg'] = 'New file is in location';
 	$config['print']['cmd'] = 'sudo lp -o landscape -o fit-to-page %s';
 	$config['print']['msg'] = '';
