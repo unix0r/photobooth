@@ -6,7 +6,7 @@ L10N = {
 	"home": "Home",
 	"qr": "QR Code",
 	"newPhoto": "Neues Bild",
-	"busy": "CHEEEEEEEEEESE!",
+	"busy": "Verarbeite Foto!",
 	"cheese": "Cheeeeeeeese!",
 	"qrHelp": "Um das Bild auf dein Handy zu laden, verbinde dich mit dem WLAN <strong>photobooth<\/strong>",
 	"error": "Es ist ein Fehler aufgetreten, bitte versuche es erneut",

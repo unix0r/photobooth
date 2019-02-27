@@ -87,7 +87,7 @@ var photoBooth = (function () {
             $('#counter').text('');
             $('.spinner').show();
             $('.loading').text(L10N.busy);
-        }, 1000);
+        }, 2500);
         $.ajax({
             url: 'takePic.php',
             dataType: "json",
@@ -207,6 +207,20 @@ var photoBooth = (function () {
             if (!processing) {
                 public.reset();
                 loader.slideDown('slow', 'easeOutBounce', function () {
+
+                    // Prepare Camera and extract Lense
+
+                    $.ajax({
+                        url: 'preparePic.php',
+                        dataType: "json",
+                        cache: false,
+                        success: function (result) {
+                        },
+                        error: function (xhr, status, error) {
+                        }
+                    });
+
+
                     public.countdown(countDown, $('#counter'));
                 });
             }
@@ -706,3 +720,5 @@ var photoBooth = (function () {
 $(function () {
     photoBooth.init();
 });
+
+
